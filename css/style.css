@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap");
+body{
+    direction: rtl;
+    text-align: right;
+    font-family: 'Tajawal',sans-serif;
+}
+:root {
+    --mainColor: #ffc527;
+}
+.section{
+    padding: 80px 0
+}
+.section-title{
+    position: relative;
+    display: inline-block;
+}
+.section-title:after{
+    position: absolute;
+    bottom: -10px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--mainColor);
+}
+.home{
+    height: 600px;
+    background-size: 100% 100%;
+    background-image: url('../images/slider1.jpg');
+    padding: 1px;/* عملنا هادي لانه الابن لما يكون دف والاب دف وتعطي للابن بادنج بتنعمل للاب فلازم تفصل بين الابن والاب بالبادنج*/
+    background-repeat: no-repeat
+}
+.home-item{
+    width: 50%;
+    margin-right: auto;
+    margin-top: 20%;
+}
+.home-item h2{
+    color: #fff;
+    font-size: 45px;
+}
+.home-item p{
+    color: #fff;
+    font-size: 20px;
+}
+
+/*  */
+.heart-icon{
+    display: block;
+    background: #ffc527 ;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.person-image img{
+    border-radius: 50%;
+}
+.subscribe{
+    background-image: url(../images/subscribe.jpg);
+    height: 450px;
+    background-size: 100% 100% ;
+    padding: 1px;
+}
+.sub-item p,.form{
+    color: #fff;
+    margin: 0 70px
+}
+.sub-item h2{
+    color: #fff;
+    margin: 0 70px;
+    font-size: 40px;
+}
+.sub-item{
+    width: 50%;
+    margin: 100px auto;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form input{
+    width: 75%;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    outline: none;
+
+}
+.form button{
+    width: 20%;
+}
+footer{
+    background: #071c33;
+}
+.links-list{
+    list-style: none;
+    color: #ffc527;
+}
+.links-list li{
+    padding: 5px 0 ;
+}
+.card-post{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 25%;
+}
+.post-img{
+    width: 30%;
+    background-size: cover;
+}
+.post-details{
+    width: 70%;
+    margin: -3px 2px;
+}
+.post-details span{
+    color: gray;
+}
+.border{
+    height: 2px;
+    width: 100%;
+    color: gray;
+}
+/* blog */
+.breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+}
+/* qwdrfqwfqwefqwe */
+/* .pagination > li > a
+{
+    background-color: white;
+    color: #5A4181;
+} */
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    background-color: var(--mainColor);
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover
+{
+    background-color:var(--mainColor) !Important;
+}
+
